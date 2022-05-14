@@ -1,0 +1,230 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,
+h2 {
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.navbar {
+    height: 60px;
+}
+
+.navbar .logo {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    
+}
+.navbar button{
+    margin-left: 10px;
+    border: 3px solid;
+    border-radius: 5px;
+    padding: 10px;
+    height: 100%;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar i {
+    margin-right: 10px;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.header {
+    min-height: 350px;
+}
+
+
+.header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+
+}
+
+.header img {
+    max-width: 480px;
+    min-width: 180px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.boxes .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    flex: 1;
+    border-radius: 10px;
+    margin: 20px 10px;
+    padding: 15px 20px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.box i {
+    margin-right: 10px;
+}
+
+/* ***** Color Section ***** */
+.navbar a{
+    color: #fff;
+}
+.navbar-green a{
+    color: #000;
+}
+#bb{
+    border-color: #0a51cc;
+    background-color: #3474e6;
+}
+#rb{
+    border-color: #e60039;
+    background-color: #ff4d79;
+}
+#gb{
+    border-color: #ace600;
+    background-color: #dfff80;
+}
+/* ***** body background color ***** */
+.body-blue {
+    background-color: #a1c3ff;
+    color: #00ff2a;
+}
+
+.body-red {
+    background-color: #ff809f;
+    color: #000;
+}
+
+.body-green {
+    background-color: #ecffb3;
+    color: #ff0800;
+}
+
+/* ***** navbar background color ***** */
+.navbar-blue {
+    background-color: #3474e6;
+}
+
+.navbar-red {
+    background-color: #ff4d79;
+}
+
+.navbar-green {
+    background-color: #dfff80;
+}
+
+/* ***** navbar anchor color on hover ***** */
+.navbar-blue a:hover {
+    color: #00ff2a;
+}
+
+.navbar-red a:hover {
+    color: #000;
+}
+
+.navbar-green a:hover {
+    color: #ff0800;
+}
+
+/* ***** header background color ***** */
+.header-blue {
+    background-color: #0151cc;
+}
+
+.header-red {
+    background-color: #ff1a53;
+}
+
+.header-green {
+    background-color: #c6ff1a;
+}
+
+/* ***** boxes background color ***** */
+.boxes-blue .box {
+    background-color: #0a51cc;
+}
+
+.boxes-red .box {
+    background-color: #e60039;
+}
+
+.boxes-green .box {
+    background-color: #ace600;
+}
+
+/* ***** CSS on Medium Screen ***** */
+@media only screen and (max-width:768px) {
+    .navbar .hide-web {
+        display: none;
+    }
+
+    .header .container {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+
+    }
+
+    .boxes .container {
+        display: block;
+        text-align: center;
+    }
+
+    .header img {
+        width: 180px;
+    }
+}
