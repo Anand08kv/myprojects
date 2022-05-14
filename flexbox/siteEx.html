@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link id="style" rel="stylesheet" href="style.css" type="text/css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
 
     <title>Flexbox | SiteEx</title>
 </head>
+
 <body id="body" class="body-blue">
     <nav id="navbar" class="navbar navbar-blue">
         <div class="container">
-            <div class="logo">Flexbox</div>
-            <div class="button">
+            <div id="nav-logo" class="logo">Flexbox</div>
+            <div id="color-btn" class="button">
                 <button id="bb" onclick="blue()"></button>
                 <button id="rb" class="color-button red-button" onclick="red()"></button>
                 <button id="gb" class="color-button green-button" onclick="green()"></button>
             </div>
-            <ul class="nav">
+            <ul id="web" class="nav">
                 <li>
                     <a href="#"><i class="hide-web fas fa-home" aria-hidden="true"></i>Home</a>
                 </li>
@@ -30,13 +35,30 @@
                     <a href="#"><i class="hide-web fas fa-phone" aria-hidden="true"></i>Contact Us</a>
                 </li>
             </ul>
+            <ul id="mobile" class="nav">
+                <li>
+                    <a href="#"><i class="fas fa-home" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-file" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-phone" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+            <div id="nav-menu-icon" class="">
+                <button type="button" onclick="menuOnClick()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
         </div>
     </nav>
     <header id="header" class="header header-blue">
         <div class="container">
             <div>
                 <h1>Flexbox Crash Course</h1>
-                <p>This course was created by Brad Traversy to help you learn the basics of flexbox.Flexbox is a very important and usefjl tool in CSS.</p>
+                <p>This course was created by Brad Traversy to help you learn the basics of flexbox.Flexbox is a very
+                    important and usefjl tool in CSS.</p>
             </div>
             <img src="color-grid-vector.svg" alt="grid-image" width="480">
         </div>
@@ -46,17 +68,19 @@
             <div class="box">
                 <h2><i class="fas fa-arrows-alt-v"></i>Alignment & Space</h2>
                 <p>A more effective way to layout, align and distribute space among items in a container</p>
-            </div> 
+            </div>
             <div class="box">
                 <h2><i class="fas fa-arrows-alt"></i>Tricky Positioning</h2>
-                <p>Flexbox usually solve tricky problems including how to position or dynamically resize elements on a page</p>
-            </div> 
+                <p>Flexbox usually solve tricky problems including how to position or dynamically resize elements on a
+                    page</p>
+            </div>
             <div class="box">
                 <h2><i class="fas fa-mobile"></i>Responsive Design</h2>
                 <p>Flexbox make building a website layout (and making it responsive!) much, much easier</p>
-            </div> 
+            </div>
         </div>
     </section>
 </body>
 <script src="script.js"></script>
+
 </html>

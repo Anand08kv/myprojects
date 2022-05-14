@@ -38,12 +38,13 @@ ul {
     font-weight: bold;
 }
 
-.button{
+.button {
     display: flex;
     align-items: center;
-    
+
 }
-.navbar button{
+
+.navbar button {
     margin-left: 10px;
     border: 3px solid;
     border-radius: 5px;
@@ -92,8 +93,7 @@ ul {
 .header img {
     max-width: 480px;
     min-width: 180px;
-    margin-top: 10px;
-    margin-left: 10px;
+    margin: 10px -10px 0px 10px;
 }
 
 .header .container {
@@ -120,24 +120,29 @@ ul {
 }
 
 /* ***** Color Section ***** */
-.navbar a{
+.navbar a {
     color: #fff;
 }
-.navbar-green a{
+
+.navbar-green a {
     color: #000;
 }
-#bb{
+
+#bb {
     border-color: #0a51cc;
     background-color: #3474e6;
 }
-#rb{
+
+#rb {
     border-color: #e60039;
     background-color: #ff4d79;
 }
-#gb{
+
+#gb {
     border-color: #ace600;
     background-color: #dfff80;
 }
+
 /* ***** body background color ***** */
 .body-blue {
     background-color: #a1c3ff;
@@ -206,12 +211,70 @@ ul {
     background-color: #ace600;
 }
 
-/* ***** CSS on Medium Screen ***** */
-@media only screen and (max-width:768px) {
-    .navbar .hide-web {
+#mobile {
+    display: none;
+}
+
+#nav-menu-icon {
+    display: none;
+}
+
+#nav-menu-icon button {
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    padding: 2px;
+}
+
+#nav-menu-icon button i {
+    margin: 3px;
+    position: relative;
+}
+
+.menu-effect button i {
+    transform: rotate(90deg);
+    transition-duration: 0.35s;
+}
+
+/* ***** CSS on Mobile and Medium Screen ***** */
+@media only screen and (max-width: 579px) {
+    #nav-menu-icon {
+        display: flex;
+    }
+
+    #web {
         display: none;
     }
 
+    #mobile {
+        display: none;
+    }
+
+    .button {
+        display: none;
+    }
+
+    .click-hide {
+        display: none;
+    }
+
+    .click-show {
+        display: flex;
+    }
+
+    #navbar .container .click-show {
+        display: flex;
+    }
+
+}
+
+@media only screen and (min-width: 580px) and (max-width: 665px) {
+    .navbar .hide-web {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
     .header .container {
         flex-direction: column;
         padding: 20px;
