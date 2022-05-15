@@ -8,15 +8,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link id="style" rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
 
     <title>Flexbox | SiteEx</title>
 </head>
 
-<body id="body" class="body-blue">
-    <nav id="navbar" class="navbar navbar-blue">
+<body id="body" class="">
+    <nav id="navbar" class="navbar">
         <div class="container">
             <div id="nav-logo" class="logo">Flexbox</div>
             <div id="color-btn" class="button">
@@ -47,13 +47,13 @@
                 </li>
             </ul>
             <div id="nav-menu-icon" class="">
-                <button type="button" onclick="menuOnClick()">
+                <button id="click1" type="button" onclick="showMenuOnClick(this.id)">
                     <i class="fa-solid fa-bars"></i>
                 </button>
             </div>
         </div>
     </nav>
-    <header id="header" class="header header-blue">
+    <header id="header" class="header" onclick="showMenuOnClick(this.id)">
         <div class="container">
             <div>
                 <h1>Flexbox Crash Course</h1>
@@ -63,7 +63,7 @@
             <img src="color-grid-vector.svg" alt="grid-image" width="480">
         </div>
     </header>
-    <section id="boxes" class="boxes boxes-blue">
+    <section id="boxes" class="boxes" onclick="showMenuOnClick(this.id)">
         <div class="container">
             <div class="box">
                 <h2><i class="fas fa-arrows-alt-v"></i>Alignment & Space</h2>
@@ -80,6 +80,7 @@
             </div>
         </div>
     </section>
+    <span id="btnvar"></span>
 </body>
 <script src="script.js"></script>
 

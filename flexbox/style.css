@@ -29,6 +29,10 @@ ul {
     padding: 0 30px;
 }
 
+
+/* ***** Navigation Bar Section ***** */
+/* ********************************** */
+
 .navbar {
     height: 60px;
 }
@@ -78,16 +82,18 @@ ul {
     margin-left: 20px;
 }
 
+
+/* ***** Header Section ***** */
+/* ************************** */
+
 .header {
     min-height: 350px;
 }
-
 
 .header h1 {
     font-size: 3rem;
     font-weight: bold;
     line-height: 1.2;
-
 }
 
 .header img {
@@ -101,6 +107,10 @@ ul {
     align-items: center;
     justify-content: space-between;
 }
+
+
+/* ****** boxes section ****** */
+/* *************************** */
 
 .boxes .container {
     display: flex;
@@ -119,7 +129,10 @@ ul {
     margin-right: 10px;
 }
 
+
 /* ***** Color Section ***** */
+/* ************************* */
+
 .navbar a {
     color: #fff;
 }
@@ -128,6 +141,7 @@ ul {
     color: #000;
 }
 
+/* ***** Three color changing buttons ***** */
 #bb {
     border-color: #0a51cc;
     background-color: #3474e6;
@@ -142,6 +156,9 @@ ul {
     border-color: #ace600;
     background-color: #dfff80;
 }
+
+
+/* ***** START of Colors from JavaScript ***** */
 
 /* ***** body background color ***** */
 .body-blue {
@@ -211,6 +228,8 @@ ul {
     background-color: #ace600;
 }
 
+/* ***** END of Colors from JavaScript ***** */
+
 #mobile {
     display: none;
 }
@@ -233,7 +252,12 @@ ul {
 
 .menu-effect button i {
     transform: rotate(90deg);
-    transition-duration: 0.35s;
+    transition-duration: 0.5s;
+}
+
+.menu-effect-rev button i {
+    transform: rotate(-90deg);
+    transition-duration: 0.5s;
 }
 
 /* ***** CSS on Mobile and Medium Screen ***** */
@@ -290,4 +314,8 @@ ul {
     .header img {
         width: 180px;
     }
+}
+
+#btnvar{
+    display: none;
 }
