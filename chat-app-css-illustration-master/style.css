@@ -175,7 +175,7 @@ body{
     color: hsl(0, 0%, 100%);
     padding: 4px 11px;
     font-size: 20px;
-    margin-left: 12px;
+    margin-left: 0px;
     border: none;
     outline: none;
     resize: none;
@@ -261,8 +261,7 @@ body{
 
 /* Chat Effect/Animation in Phone Display */
 /* ************************************** */
-@keyframes ch-left {    
-    
+@keyframes ch-left {
     50%{
         opacity: 0;
         transform: translate(-100px, 200px);
