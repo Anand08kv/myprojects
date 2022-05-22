@@ -1,0 +1,354 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(270, 20%, 96%);
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+}
+.container-bg{
+    position: absolute;
+    left: -50px;
+    z-index: -2;
+    width: 360px;
+    height: 580px;
+    background-color: hsl(264, 100%, 61%);
+    background-image: linear-gradient(to bottom left,hsl(293, 100%, 63%),hsl(264, 100%, 61%));
+    border-bottom-right-radius: 250px;
+    border-bottom-left-radius: 250px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+/* Left Side  Phone Image Side */
+/* *************************** */
+.phone-side{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+.phone{
+    border: 12px solid white;
+    border-radius: 30px;
+    background-color: hsl(270, 20%, 96%);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+    position: relative;
+    left: 50px;
+    /* height: 450px; */
+    height: 500px;
+    width: 260px;
+}
+
+
+/* Phone Profile Inside Area */
+.phone-camera{
+    position: absolute;
+    top: -12px;
+    left: 60px;
+    height: 25px;
+    width: 108px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.phone header{
+    color: hsl(0, 0%, 100%);
+    background-image: linear-gradient(to bottom left,hsl(293, 100%, 63%),hsl(264, 100%, 61%));
+    border-radius: 18px;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    height: 68px;
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr 4.5fr 0.5fr;
+    align-items: center;
+    padding: 18px 3px 0px 5px;
+}
+.phone header img{
+    width: 35px;
+    border: 2px solid hsl(270, 20%, 96%);
+    border-radius: 100%;
+}
+.phone header h3{
+    font-size: 0.85rem;
+}
+.phone header p{
+    font-size: 0.6rem;
+    color: hsl(276, 100%, 81%);
+}
+
+/* Phone chat Area */
+.phone section{
+    border-radius: 18px;
+    height: 408px;
+    padding: 7px;
+    background-color: hsl(270, 20%, 96%);
+    display: grid;
+    grid-gap: 5px;
+    overflow-y: scroll;
+    padding-bottom: 50px;
+}
+.phone section::-webkit-scrollbar {
+    display: none;
+}
+.phone section div{
+    font-size: 0.7rem;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+    max-width: 75%;
+    background-color: hsl(0, 0%, 100%);
+    padding: 3px 3px 3px 5px;
+    overflow-wrap: break-word;
+}
+.phone section img{
+    width: 40px;
+}
+.chat-left{
+    color: hsl(276, 55%, 52%);
+    justify-self: left;
+    border-radius: 12px;
+    border-bottom-left-radius: 4px;
+}
+.chat-right{
+    color: hsl(271, 15%, 43%);
+    justify-self: right;
+    border-radius: 12px;
+    border-bottom-right-radius: 4px;
+}
+#dog-img{
+    padding: 0px;
+    background-color: transparent;
+    box-shadow: none;
+}
+.walk-rate{
+    display: flex;
+    align-items: center;
+    height: 45px;
+    background-image: linear-gradient(to right,hsl(293, 100%, 63%),hsl(264, 100%, 61%));
+    color: white;
+}
+.walk-rate .radio-button{
+    margin-right: 5px;
+}
+.walk-rate p{
+    margin: 0px 5px 0px 15px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+#input{  
+    max-width: 100%;
+    border-radius: 23px;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: 8fr 2fr;
+    position: absolute;
+    align-self: flex-end;
+    justify-self: center;
+    bottom: 5px;
+}
+#input input{
+    height: 40px;
+    border-radius: 23px;
+    padding: 0px 5px 0px 8px;
+    margin-right: 2px;
+    border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+}
+::placeholder{
+    color: hsl(206, 6%, 79%);
+}
+#input button{
+    align-self: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    background-color: hsl(271, 36%, 24%);
+    color: hsl(0, 0%, 100%);
+    padding: 4px 11px;
+    font-size: 20px;
+    margin-left: 12px;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+
+/* Right Side - Text Content Side */
+/* ****************************** */
+.content-side{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.content-side main{
+    width: 50%;
+    min-width: 200px;
+}
+.content-side h1{
+    margin-bottom: 20px;
+    color: hsl(271, 36%, 24%);
+}
+.content-side p{
+    color: hsl(270, 7%, 64%);
+}
+
+
+/* Display in different Screen Sizes */
+/* ********************************* */
+@media only screen and (max-width:1025px){
+    .content-side main{
+        width: 80%;
+    }
+}
+@media only screen and (max-width:769px){
+    .container-bg{
+        left: 0px;
+        width: 300px;
+        height: 620px;
+    }
+    .content-side main{
+        width: 90%;
+    }
+    .phone{
+        position: fixed;
+        left: 20px;
+        top: 20px;
+    }
+}
+@media only screen and (max-width:480px){
+    .container-bg{
+        left: -50%;
+        height: 450px;
+        width: 100vw;
+    }
+    .container{
+        grid-template-columns: 1fr;
+    }
+    .phone-side{
+        height: auto;
+        align-items: start;
+        justify-content: center;
+    }
+    .phone{
+        position: relative;
+        left: 0px;
+        top: 0px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    .content-side{
+        height: auto;
+        align-items: flex-start;
+        margin-bottom: 150px;
+    }
+    .content-side main{
+        width: 100%;
+        min-width: none;
+        padding: 35px;
+        text-align: center;
+    }
+}
+
+
+/* Chat Effect/Animation in Phone Display */
+/* ************************************** */
+@keyframes ch-left {    
+    
+    50%{
+        opacity: 0;
+        transform: translate(-100px, 200px);
+    }
+    60% { 
+        visibility: hidden;
+        
+    }
+    70%{
+        transform-origin: bottom left;
+        transform: scale(0.5);
+    }
+    100% { 
+        visibility: visible;
+        opacity: 1;
+    }
+}
+@keyframes ch-right {
+    50%{
+        opacity: 0;
+        transform: translate(100px, 200px);
+    }
+    60% { 
+        visibility: hidden;
+        
+    }
+    70%{
+        transform-origin: bottom right;
+        transform: scale(0.5);
+    }
+    100% { 
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.phone section div:nth-child(1){
+    visibility: hidden;
+    animation: 1s ch-left;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+}
+.phone section div:nth-child(2){
+    visibility: hidden;
+    animation: 1s ch-left;
+    animation-fill-mode: forwards;
+    animation-delay: 0.8s;
+}
+.phone section div:nth-child(3){
+    visibility: hidden;
+    animation: 1s ch-right;
+    animation-fill-mode: forwards;
+    animation-delay: 2.1s;
+}
+.phone section div:nth-child(4){
+    visibility: hidden;
+    animation: 1s ch-right;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+.phone section div:nth-child(5){
+    visibility: hidden;
+    animation: 1s ch-right;
+    animation-fill-mode: forwards;
+    animation-delay: 3.6s;
+}
+.phone section div:nth-child(6){
+    visibility: hidden;
+    animation: 1s ch-left;
+    animation-fill-mode: forwards;
+    animation-delay: 5s;
+}
+.phone section div:nth-child(7){
+    visibility: hidden;
+    animation: 1s ch-left;
+    animation-fill-mode: forwards;
+    animation-delay: 6s;
+}
+.phone section div:nth-child(8){
+    visibility: hidden;
+    animation: 1s ch-left;
+    animation-fill-mode: forwards;
+    animation-delay: 7s;
+}
+.msg{
+    visibility: hidden;
+    animation: 0.75s ch-right;
+    animation-fill-mode: forwards;
+}
