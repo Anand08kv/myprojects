@@ -14,7 +14,7 @@ btn.addEventListener('click', function handleClick(event) {
         (function () {
             let scrollChat = document.getElementById("scrollDown");
             let newEle = scrollChat.querySelector('div:nth-last-of-type(2)');
-            let x = newEle.clientHeight + 5;
+            let x = newEle.clientHeight + 8;
             scrollChat.scrollTop += x;
         })();
     }
