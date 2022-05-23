@@ -144,6 +144,7 @@ body{
 }
 #input{  
     max-width: 100%;
+    width: 230px;
     border-radius: 23px;
     padding: 0px;
     margin-bottom: 0px;
@@ -151,7 +152,7 @@ body{
     grid-template-columns: 8fr 2fr;
     position: absolute;
     bottom: 5px;
-    left: 7px;
+    left: 3px;
 }
 #input input{
     height: 40px;
